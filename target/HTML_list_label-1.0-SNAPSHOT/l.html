@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：HTML_list_label
+  File name(文件名): l
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/1/17
+  Time(创建时间)： 19:31
+  Description(描述)：
+  HTML 列表（List）可以将若干条相关的内容整理起来，让内容看起来更加有条理。在列表内您可以放置文本、图像、链接等，也可以在一个列表中定义另一个列表（列表嵌套）。
+HTML 为我们提供了三种不同形式的列表：
+有序列表，使用 <ol> + <li> 标签
+无序列表，使用 <ul> + <li> 标签
+定义列表，使用 <dl> + <dt> + <dd> 标签
+1. 有序列表
+在 HTML 中， <ol> 标签用来表示有序列表。有序列表之间的内容有先后顺序之分，例如菜谱中的一系列步骤，这些步骤需要按顺序完成，这时就可以使用有序列表。
+有序列表需要使用 <ol> 和 <li> 标签：
+<ol> 是 order list 的简称，表示有序列表，它可以为列表的每一项进行编号，默认从数字 1 开始。
+<li> 是 list item 的简称，表示列表的每一项，<ol> 中有多少个 <li> 就表示有多少条内容。列表项中可以包含文本、图片、链接等，甚至还可以是另外一个列表。
+2. 无序列表
+HTML 使用 <ul> 标签来表示无序列表。无序列表和有序列表类似，都是使用 <li> 标签来表示列表的每一项，
+但是无序列表之间的内容没有顺序。例如，早饭的种类不需要表明顺序，这时就可以使用无序列表。
+无序列表需要使用 <ul> 和 <li> 标签：
+<ul> 是 unordered list 的简称，表示无序列表。
+<ul> 和 <ol> 中的 <li> 一样，都表示列表中的每一项。默认情况下，无序列表的每一项都使用●符号表示。
+3. 定义列表
+在 HTML 中，<dl> 标签用于创建定义列表。定义列表由标题（术语）和描述两部分组成，描述是对标题的解释和说明，标题是对描述的总结和提炼。
+定义列表具体语法格式如下：
+<dl>
+    <dt>标题1<dt>
+    <dd>描述文本2<dd>
+    <dt>标题2<dt>
+    <dd>描述文本2<dd>
+    <dt>标题3<dt>
+    <dd>描述文本3<dd>
+</dl>
+定义列表需要使用 <dl>、<dt> 和 <dd> 标签：
+<dl> 是 definition list 的简称，表示定义列表。
+<dt> 是 definition term 的简称，表示定义术语，也就是我们说的标题。
+<dd> 是 definition description 的简称，表示定义描述 。
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表</title>
+</head>
+<body>
+<p>煮米饭的步骤：</p>
+<ol>
+    <li>将水煮沸</li>
+    <li>加入一勺米</li>
+    <li>搅拌均匀</li>
+    <li>继续煮10分钟</li>
+</ol>
+
+<p>早餐的种类：</p>
+<ul>
+    <li>鸡蛋</li>
+    <li>牛奶</li>
+    <li>面包</li>
+    <li>生菜</li>
+</ul>
+
+<br>
+<br>
+<br>
+<p style="margin:0px auto;">煮米饭的步骤：</p>
+<ol style="margin:0px auto; padding-left:20px; list-style:upper-latin;">
+    <li>将水煮沸</li>
+    <li>加入一勺米</li>
+    <li>搅拌均匀</li>
+    <li>继续煮10分钟</li>
+</ol>
+<p style="margin-bottom:0px;">早餐的种类：</p>
+<ul style="margin:0px auto; padding-left:20px; list-style:square;">
+    <li>鸡蛋</li>
+    <li>牛奶</li>
+    <li>面包</li>
+    <li>生菜</li>
+</ul>
+<dl style="margin-bottom:0px;">
+    <dt><b>HTML</b></dt>
+    <dd style="margin:auto auto 10px 0px;">HTML 是一种专门用来开发网页的标记语言。</dd>
+    <dt><b>CSS</b></dt>
+    <dd style="margin:auto auto 10px 0px;">CSS 层叠样式表可以控制 HTML 文档的显示样式，用来美化网页。</dd>
+    <dt><b>JavaScript</b></dt>
+    <dd style="margin:auto auto 10px 0px;">JavaScript 简称 JS，是一种用来开发网站（包括前端和后台）的脚本编程语言。</dd>
+</dl>
+
+</body>
+</html>
